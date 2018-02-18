@@ -1,0 +1,29 @@
+<h1>HelloWorld from hello</h1>
+
+<!-- calculates -->
+<% 1+1 %>
+
+<!-- calcualates and outputs -->
+<%= 1+1 %><br/>
+
+<% target = "world" %>
+<%= "Hello #{target}" %>
+
+
+<br/>
+<%=
+3.times do |n|
+  %>
+
+<br/>
+<% @array.each do |n|%>
+  <%= n %> <br />
+<%end%>
+<br />
+<%= link_to('Index page2', {:action => 'index'}) %>
+<br />
+ID: <%= @id %> <br/>
+ID: <%= params[:id] %><br/>
+Page: <%= @page %> <br/>
+Next Page: <%= @page.to_i + 1 %><br />
+<br />
